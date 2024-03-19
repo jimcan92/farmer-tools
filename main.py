@@ -1,6 +1,3 @@
-from multiprocessing import freeze_support
-from uvicorn import run
+from src import app
 
-if __name__ == '__main__':
-    freeze_support()
-    run('src:app', reload=True)
+app = app
